@@ -1,4 +1,4 @@
-import { Car, Wrench, WrenchScrewdriver, Cog, Thermometer, Gauge } from "lucide-react";
+import { Car, Wrench, Cog, Thermometer, Gauge } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const Services = () => {
@@ -28,7 +28,7 @@ const Services = () => {
       ]
     },
     {
-      icon: <WrenchScrewdriver className="text-secondary w-12 h-12" />,
+      icon: <Wrench className="text-secondary w-12 h-12" />,
       title: "Specialized Services",
       items: [
         "Transmission Overhauls",
