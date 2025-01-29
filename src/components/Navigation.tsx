@@ -30,15 +30,15 @@ const Navigation = () => {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center">
+          <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <Link
                 key={item.name}
                 to={item.path}
-                className={`ml-8 px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                className={`px-4 py-2 rounded-md text-base font-medium transition-all duration-200 hover:scale-105 ${
                   isActive(item.path)
-                    ? "text-secondary"
-                    : "text-primary hover:text-secondary"
+                    ? "text-secondary bg-secondary/10 font-semibold"
+                    : "text-primary hover:text-secondary hover:bg-secondary/5"
                 }`}
               >
                 {item.name}
@@ -50,7 +50,7 @@ const Navigation = () => {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-primary hover:text-secondary"
+              className="text-primary hover:text-secondary transition-colors p-2 rounded-md hover:bg-secondary/5"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -60,15 +60,15 @@ const Navigation = () => {
         {/* Mobile Menu */}
         {isOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <div className="px-2 pt-2 pb-3 space-y-1">
               {navItems.map((item) => (
                 <Link
                   key={item.name}
                   to={item.path}
-                  className={`block px-3 py-2 rounded-md text-base font-medium ${
+                  className={`block px-4 py-2 rounded-md text-base font-medium transition-colors ${
                     isActive(item.path)
-                      ? "text-secondary"
-                      : "text-primary hover:text-secondary"
+                      ? "text-secondary bg-secondary/10 font-semibold"
+                      : "text-primary hover:text-secondary hover:bg-secondary/5"
                   }`}
                   onClick={() => setIsOpen(false)}
                 >
