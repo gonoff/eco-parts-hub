@@ -31,7 +31,7 @@ const About = () => {
         {/* Header Section */}
         <div className="text-center mb-12">
           <Users className="mx-auto text-secondary mb-6" size={48} />
-          <h1 className="text-4xl font-bold mb-6">About ECO Saving Auto Parts</h1>
+          <h1 className="text-4xl font-bold mb-6 text-white/90">About ECO Saving Auto Parts</h1>
           <p className="text-lg mb-4 text-white/90">
             Your One Stop Solution for All Cars Parts
           </p>
@@ -43,7 +43,7 @@ const About = () => {
             <Card key={index} className="bg-white/10 backdrop-blur-sm border-none">
               <CardHeader className="text-center">
                 <div className="flex justify-center">{value.icon}</div>
-                <CardTitle className="text-xl mb-2">{value.title}</CardTitle>
+                <CardTitle className="text-xl mb-2 text-white/90">{value.title}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-center text-white/90">{value.description}</p>
@@ -54,10 +54,10 @@ const About = () => {
 
         {/* Contact Information */}
         <div className="bg-white/10 rounded-lg p-8 backdrop-blur-sm mb-12">
-          <h2 className="text-2xl font-bold mb-6 text-center">Contact Us</h2>
+          <h2 className="text-2xl font-bold mb-6 text-center text-white/90">Contact Us</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <div>
-              <h3 className="text-xl font-semibold mb-4">Location</h3>
+              <h3 className="text-xl font-semibold mb-4 text-white/90">Location</h3>
               <p className="text-white/90">613 Barry Street</p>
               <p className="text-white/90">Orlando, FL 32808</p>
               <p className="mt-4">
@@ -72,7 +72,7 @@ const About = () => {
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold mb-4">Business Hours</h3>
+              <h3 className="text-xl font-semibold mb-4 text-white/90">Business Hours</h3>
               {hours.map((schedule, index) => (
                 <div key={index} className="flex justify-between mb-2">
                   <span className="text-white/90">{schedule.day}</span>
@@ -85,7 +85,7 @@ const About = () => {
 
         {/* Social Media */}
         <div className="text-center">
-          <h2 className="text-2xl font-bold mb-6">Connect With Us</h2>
+          <h2 className="text-2xl font-bold mb-6 text-white/90">Connect With Us</h2>
           <div className="flex justify-center gap-6">
             <a
               href="https://www.facebook.com/ecosaving.autoparts/"
