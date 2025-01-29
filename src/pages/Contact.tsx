@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail } from "lucide-react";
+import { MapPin, Phone, Mail, Facebook, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Contact = () => {
@@ -49,17 +49,19 @@ const Contact = () => {
             <div className="space-y-4">
               <Button 
                 variant="outline" 
-                className="w-full justify-start"
+                className="w-full justify-start gap-3"
                 onClick={() => window.open('https://www.facebook.com/ecosaving.autoparts/', '_blank')}
               >
-                Facebook: @ecosaving.autoparts
+                <Facebook className="w-5 h-5" />
+                @ecosaving.autoparts
               </Button>
               <Button 
                 variant="outline" 
-                className="w-full justify-start"
+                className="w-full justify-start gap-3"
                 onClick={() => window.open('https://www.instagram.com/ecosaving.autoparts/', '_blank')}
               >
-                Instagram: @ecosaving.autoparts
+                <Instagram className="w-5 h-5" />
+                @ecosaving.autoparts
               </Button>
             </div>
           </div>
