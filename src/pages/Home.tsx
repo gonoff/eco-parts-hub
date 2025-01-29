@@ -10,7 +10,7 @@ const Home = () => {
         <img 
           src="/lovable-uploads/2f110710-5090-4b3f-9fa5-85402f58365b.png" 
           alt="ECO Saving Auto Parts - Your trusted source for affordable & reliable auto parts in Orlando, FL" 
-          className="w-full max-w-4xl mx-auto"
+          className="w-full max-w-6xl mx-auto"
         />
       </section>
 
