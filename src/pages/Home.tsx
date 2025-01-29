@@ -13,12 +13,6 @@ const Home = () => {
         <p className="text-xl mb-8">
           Your trusted source for affordable and reliable auto parts in Orlando, FL
         </p>
-        <Link
-          to="/contact"
-          className="inline-block bg-secondary hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-lg transition-colors"
-        >
-          Contact Us Today
-        </Link>
       </section>
 
       {/* Services Grid */}
