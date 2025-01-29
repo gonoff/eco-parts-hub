@@ -23,7 +23,7 @@ const Home = () => {
       </section>
 
       {/* eBay Store Section */}
-      <section className="py-16 bg-white/10 backdrop-blur-sm rounded-lg my-8">
+      <section className="py-16 bg-gradient-to-br from-primary/30 to-secondary/30 backdrop-blur-sm rounded-lg my-8 shadow-xl">
         <div className="text-center">
           <h2 className="text-3xl font-bold text-white mb-6">
             Browse Our Auto Parts Store
@@ -61,23 +61,24 @@ const Home = () => {
       </section>
 
       {/* Services Grid */}
-      <section className="py-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="bg-white/10 backdrop-blur-sm p-8 rounded-lg text-center">
+      <section className="py-16 relative">
+        <div className="absolute inset-0 bg-[linear-gradient(45deg,rgba(0,75,81,0.1)_0%,rgba(0,155,114,0.1)_100%)] rounded-lg"></div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+          <div className="bg-primary/20 backdrop-blur-sm p-8 rounded-lg text-center hover:bg-primary/30 transition-colors">
             <Car className="mx-auto text-secondary mb-4" size={48} />
             <h3 className="text-xl font-bold text-white mb-2">Quality Parts</h3>
             <p className="text-white/80">
               Extensive inventory of certified used auto parts
             </p>
           </div>
-          <div className="bg-white/10 backdrop-blur-sm p-8 rounded-lg text-center">
-            <Wrench className="mx-auto text-secondary mb-4" size={48} />
+          <div className="bg-secondary/20 backdrop-blur-sm p-8 rounded-lg text-center hover:bg-secondary/30 transition-colors">
+            <Wrench className="mx-auto text-primary mb-4" size={48} />
             <h3 className="text-xl font-bold text-white mb-2">Expert Repairs</h3>
             <p className="text-white/80">
               Professional repair services by certified technicians
             </p>
           </div>
-          <div className="bg-white/10 backdrop-blur-sm p-8 rounded-lg text-center">
+          <div className="bg-primary/20 backdrop-blur-sm p-8 rounded-lg text-center hover:bg-primary/30 transition-colors">
             <Settings className="mx-auto text-secondary mb-4" size={48} />
             <h3 className="text-xl font-bold text-white mb-2">Eco-Friendly</h3>
             <p className="text-white/80">
@@ -88,30 +89,30 @@ const Home = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-16">
+      <section className="py-16 bg-gradient-to-tr from-secondary/20 to-primary/20 rounded-lg">
         <h2 className="text-3xl font-bold text-white text-center mb-12">
           Why Choose ECO Saving Auto Parts?
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div className="text-center">
+          <div className="text-center bg-white/5 p-6 rounded-lg backdrop-blur-sm hover:bg-white/10 transition-colors">
             <Shield className="mx-auto text-secondary mb-4" size={36} />
             <h3 className="text-xl font-bold text-white mb-2">High Quality</h3>
             <p className="text-white/80">All parts tested for reliability</p>
           </div>
-          <div className="text-center">
+          <div className="text-center bg-white/5 p-6 rounded-lg backdrop-blur-sm hover:bg-white/10 transition-colors">
             <DollarSign className="mx-auto text-secondary mb-4" size={36} />
             <h3 className="text-xl font-bold text-white mb-2">Best Prices</h3>
             <p className="text-white/80">Competitive rates vs dealerships</p>
           </div>
-          <div className="text-center">
+          <div className="text-center bg-white/5 p-6 rounded-lg backdrop-blur-sm hover:bg-white/10 transition-colors">
             <Wrench className="mx-auto text-secondary mb-4" size={36} />
             <h3 className="text-xl font-bold text-white mb-2">Expert Team</h3>
             <p className="text-white/80">Skilled automotive professionals</p>
           </div>
-          <div className="text-center">
+          <div className="text-center bg-white/5 p-6 rounded-lg backdrop-blur-sm hover:bg-white/10 transition-colors">
             <Recycle className="mx-auto text-secondary mb-4" size={36} />
             <h3 className="text-xl font-bold text-white mb-2">Eco-Friendly</h3>
-            <p className="text-white/80">Sustainable parts recycling</p>
+            <p className="text-white/80">Supporting sustainable auto repair</p>
           </div>
         </div>
       </section>
@@ -122,7 +123,7 @@ const Home = () => {
           Our Comprehensive Services
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="bg-white/10 backdrop-blur-sm p-8 rounded-lg">
+          <div className="bg-gradient-to-br from-primary/30 to-secondary/20 p-8 rounded-lg hover:from-primary/40 hover:to-secondary/30 transition-colors">
             <h3 className="text-2xl font-bold text-white mb-4">Used Auto Parts</h3>
             <ul className="space-y-3 text-white/80">
               <li className="flex items-center">
@@ -143,7 +144,7 @@ const Home = () => {
               </li>
             </ul>
           </div>
-          <div className="bg-white/10 backdrop-blur-sm p-8 rounded-lg">
+          <div className="bg-gradient-to-bl from-secondary/30 to-primary/20 p-8 rounded-lg hover:from-secondary/40 hover:to-primary/30 transition-colors">
             <h3 className="text-2xl font-bold text-white mb-4">Mechanical Services</h3>
             <ul className="space-y-3 text-white/80">
               <li className="flex items-center">
@@ -169,12 +170,12 @@ const Home = () => {
 
       {/* Google Reviews Section */}
       <section className="py-16">
-        <div className="bg-white/10 backdrop-blur-sm p-8 rounded-lg">
+        <div className="bg-gradient-to-r from-primary/20 via-secondary/20 to-primary/20 p-8 rounded-lg shadow-lg">
           <h2 className="text-3xl font-bold text-white text-center mb-8">
             Our Google Reviews
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white/5 p-6 rounded-lg">
+            <div className="bg-white/10 p-6 rounded-lg hover:bg-white/15 transition-colors">
               <div className="flex items-center mb-4">
                 <div className="flex text-yellow-400">
                   {"★".repeat(5)}
@@ -187,7 +188,7 @@ const Home = () => {
               <p className="text-white font-semibold">- Javier Perez</p>
               <p className="text-white/60 text-sm">2 months ago</p>
             </div>
-            <div className="bg-white/5 p-6 rounded-lg">
+            <div className="bg-white/10 p-6 rounded-lg hover:bg-white/15 transition-colors">
               <div className="flex items-center mb-4">
                 <div className="flex text-yellow-400">
                   {"★".repeat(5)}
@@ -200,7 +201,7 @@ const Home = () => {
               <p className="text-white font-semibold">- Marcos Silva</p>
               <p className="text-white/60 text-sm">1 month ago</p>
             </div>
-            <div className="bg-white/5 p-6 rounded-lg">
+            <div className="bg-white/10 p-6 rounded-lg hover:bg-white/15 transition-colors">
               <div className="flex items-center mb-4">
                 <div className="flex text-yellow-400">
                   {"★".repeat(5)}
