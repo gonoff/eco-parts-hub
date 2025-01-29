@@ -21,8 +21,8 @@ const Footer = () => {
               </a>
             </p>
             <p>
-              <a href="mailto:jonadisonribas@gmail.com" className="text-secondary hover:text-secondary/80">
-                jonadisonribas@gmail.com
+              <a href="mailto:ecosavingautoparts@gmail.com" className="text-secondary hover:text-secondary/80">
+                ecosavingautoparts@gmail.com
               </a>
             </p>
           </div>
