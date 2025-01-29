@@ -20,11 +20,6 @@ const About = () => {
     }
   ];
 
-  const hours = [
-    { day: "Monday - Friday", time: "9:00 AM - 6:00 PM" },
-    { day: "Saturday - Sunday", time: "Closed" }
-  ];
-
   return (
     <div className="container mx-auto px-4 py-8 text-white">
       <div className="max-w-4xl mx-auto">
@@ -50,60 +45,6 @@ const About = () => {
               </CardContent>
             </Card>
           ))}
-        </div>
-
-        {/* Contact Information */}
-        <div className="bg-white/10 rounded-lg p-8 backdrop-blur-sm mb-12">
-          <h2 className="text-2xl font-bold mb-6 text-center text-white/90">Contact Us</h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            <div>
-              <h3 className="text-xl font-semibold mb-4 text-white/90">Location</h3>
-              <p className="text-white/90">613 Barry Street</p>
-              <p className="text-white/90">Orlando, FL 32808</p>
-              <p className="mt-4">
-                <a href="tel:+13213146370" className="text-secondary hover:text-secondary/80">
-                  +1 (321) 314-6370
-                </a>
-              </p>
-              <p>
-                <a href="mailto:jonadisonribas@gmail.com" className="text-secondary hover:text-secondary/80">
-                  jonadisonribas@gmail.com
-                </a>
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-4 text-white/90">Business Hours</h3>
-              {hours.map((schedule, index) => (
-                <div key={index} className="flex justify-between mb-2">
-                  <span className="text-white/90">{schedule.day}</span>
-                  <span className="text-white/90">{schedule.time}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        {/* Social Media */}
-        <div className="text-center">
-          <h2 className="text-2xl font-bold mb-6 text-white/90">Connect With Us</h2>
-          <div className="flex justify-center gap-6">
-            <a
-              href="https://www.facebook.com/ecosaving.autoparts/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-secondary hover:text-secondary/80"
-            >
-              Facebook
-            </a>
-            <a
-              href="https://www.instagram.com/ecosaving.autoparts"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-secondary hover:text-secondary/80"
-            >
-              Instagram
-            </a>
-          </div>
         </div>
       </div>
     </div>
