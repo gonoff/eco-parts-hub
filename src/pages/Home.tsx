@@ -77,7 +77,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Services Overview */}
+      {/* Our Comprehensive Services */}
       <section className="py-16">
         <h2 className="text-3xl font-bold text-white text-center mb-12">
           Our Comprehensive Services
@@ -128,29 +128,53 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Quick Contact */}
+      {/* Testimonials & Trust Indicators */}
       <section className="py-16">
         <div className="bg-white/10 backdrop-blur-sm p-8 rounded-lg text-center">
-          <h2 className="text-3xl font-bold text-white mb-8">Visit Our Shop</h2>
+          <h2 className="text-3xl font-bold text-white mb-8">What Our Customers Say</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="flex flex-col items-center">
-              <MapPin className="text-secondary mb-4" size={36} />
-              <p className="text-white/80">613 Barry Street, Orlando, FL 32808</p>
+              <div className="text-secondary text-4xl mb-4">"</div>
+              <p className="text-white/80 italic mb-4">
+                "Found exactly the part I needed for my Honda at half the dealer's price. Great service!"
+              </p>
+              <p className="text-white font-semibold">- Michael R.</p>
+              <p className="text-white/60 text-sm">Toyota Owner</p>
             </div>
             <div className="flex flex-col items-center">
-              <Clock className="text-secondary mb-4" size={36} />
-              <p className="text-white/80">Mon - Fri: 9 AM - 6 PM</p>
-              <p className="text-white/80">Sat - Sun: Closed</p>
+              <div className="text-secondary text-4xl mb-4">"</div>
+              <p className="text-white/80 italic mb-4">
+                "Professional team that knows their stuff. Quick service and fair prices."
+              </p>
+              <p className="text-white font-semibold">- Sarah M.</p>
+              <p className="text-white/60 text-sm">Ford Owner</p>
             </div>
             <div className="flex flex-col items-center">
-              <Phone className="text-secondary mb-4" size={36} />
-              <p className="text-white/80">+1 (321) 314-6370</p>
-              <p className="text-white/80">jonadisonribas@gmail.com</p>
+              <div className="text-secondary text-4xl mb-4">"</div>
+              <p className="text-white/80 italic mb-4">
+                "Best auto parts shop in Orlando! They helped me save hundreds on repairs."
+              </p>
+              <p className="text-white font-semibold">- David K.</p>
+              <p className="text-white/60 text-sm">Chevrolet Owner</p>
             </div>
           </div>
-          <Button className="mt-8 bg-secondary hover:bg-secondary/80">
-            <Link to="/contact" className="text-white">Get in Touch</Link>
-          </Button>
+          <div className="mt-12 pt-8 border-t border-white/10">
+            <h3 className="text-xl font-bold text-white mb-6">Trusted By Car Owners Across Orlando</h3>
+            <div className="flex justify-center items-center space-x-8">
+              <div className="text-white/80">
+                <div className="text-3xl font-bold text-secondary">5000+</div>
+                <div className="text-sm">Parts Sold</div>
+              </div>
+              <div className="text-white/80">
+                <div className="text-3xl font-bold text-secondary">1000+</div>
+                <div className="text-sm">Happy Customers</div>
+              </div>
+              <div className="text-white/80">
+                <div className="text-3xl font-bold text-secondary">4.8/5</div>
+                <div className="text-sm">Customer Rating</div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
