@@ -32,7 +32,7 @@ const About = () => {
         <div className="text-center mb-12">
           <Users className="mx-auto text-secondary mb-6" size={48} />
           <h1 className="text-4xl font-bold mb-6">About ECO Saving Auto Parts</h1>
-          <p className="text-lg mb-4">
+          <p className="text-lg mb-4 text-white/90">
             Your One Stop Solution for All Cars Parts
           </p>
         </div>
@@ -46,7 +46,7 @@ const About = () => {
                 <CardTitle className="text-xl mb-2">{value.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-center">{value.description}</p>
+                <p className="text-sm text-center text-white/90">{value.description}</p>
               </CardContent>
             </Card>
           ))}
@@ -58,8 +58,8 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-6">
             <div>
               <h3 className="text-xl font-semibold mb-4">Location</h3>
-              <p>613 Barry Street</p>
-              <p>Orlando, FL 32808</p>
+              <p className="text-white/90">613 Barry Street</p>
+              <p className="text-white/90">Orlando, FL 32808</p>
               <p className="mt-4">
                 <a href="tel:+13213146370" className="text-secondary hover:text-secondary/80">
                   +1 (321) 314-6370
@@ -75,8 +75,8 @@ const About = () => {
               <h3 className="text-xl font-semibold mb-4">Business Hours</h3>
               {hours.map((schedule, index) => (
                 <div key={index} className="flex justify-between mb-2">
-                  <span>{schedule.day}</span>
-                  <span>{schedule.time}</span>
+                  <span className="text-white/90">{schedule.day}</span>
+                  <span className="text-white/90">{schedule.time}</span>
                 </div>
               ))}
             </div>
