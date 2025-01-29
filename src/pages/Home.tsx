@@ -7,12 +7,11 @@ const Home = () => {
     <div className="container mx-auto px-4">
       {/* Hero Section */}
       <section className="text-white text-center py-16">
-        <h1 className="text-4xl md:text-6xl font-bold mb-6">
-          Quality Used Auto Parts & Repairs
-        </h1>
-        <p className="text-xl mb-8">
-          Your trusted source for affordable and reliable auto parts in Orlando, FL
-        </p>
+        <img 
+          src="/lovable-uploads/2f110710-5090-4b3f-9fa5-85402f58365b.png" 
+          alt="ECO Saving Auto Parts - Your trusted source for affordable & reliable auto parts in Orlando, FL" 
+          className="w-full max-w-4xl mx-auto"
+        />
       </section>
 
       {/* Services Grid */}
