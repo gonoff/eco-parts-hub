@@ -10,6 +10,7 @@ const Navigation = () => {
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     { name: "Services", path: "/services" },
+    { name: "Buy Auto Parts", path: "https://www.ebay.com/usr/ecosavingauto0", external: true },
     { name: "Contact", path: "/contact" },
   ];
 
@@ -32,17 +33,29 @@ const Navigation = () => {
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
-              <Link
-                key={item.name}
-                to={item.path}
-                className={`px-4 py-2 rounded-md text-base font-medium transition-all duration-200 hover:scale-105 ${
-                  isActive(item.path)
-                    ? "text-secondary bg-secondary/10 font-semibold"
-                    : "text-primary hover:text-secondary hover:bg-secondary/5"
-                }`}
-              >
-                {item.name}
-              </Link>
+              item.external ? (
+                <a
+                  key={item.name}
+                  href={item.path}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 rounded-md text-base font-medium transition-all duration-200 hover:scale-105 text-primary hover:text-secondary hover:bg-secondary/5"
+                >
+                  {item.name}
+                </a>
+              ) : (
+                <Link
+                  key={item.name}
+                  to={item.path}
+                  className={`px-4 py-2 rounded-md text-base font-medium transition-all duration-200 hover:scale-105 ${
+                    isActive(item.path)
+                      ? "text-secondary bg-secondary/10 font-semibold"
+                      : "text-primary hover:text-secondary hover:bg-secondary/5"
+                  }`}
+                >
+                  {item.name}
+                </Link>
+              )
             ))}
           </div>
 
@@ -62,18 +75,31 @@ const Navigation = () => {
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navItems.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.path}
-                  className={`block px-4 py-2 rounded-md text-base font-medium transition-colors ${
-                    isActive(item.path)
-                      ? "text-secondary bg-secondary/10 font-semibold"
-                      : "text-primary hover:text-secondary hover:bg-secondary/5"
-                  }`}
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.name}
-                </Link>
+                item.external ? (
+                  <a
+                    key={item.name}
+                    href={item.path}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block px-4 py-2 rounded-md text-base font-medium transition-colors text-primary hover:text-secondary hover:bg-secondary/5"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.name}
+                  </a>
+                ) : (
+                  <Link
+                    key={item.name}
+                    to={item.path}
+                    className={`block px-4 py-2 rounded-md text-base font-medium transition-colors ${
+                      isActive(item.path)
+                        ? "text-secondary bg-secondary/10 font-semibold"
+                        : "text-primary hover:text-secondary hover:bg-secondary/5"
+                    }`}
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                )
               ))}
             </div>
           </div>
