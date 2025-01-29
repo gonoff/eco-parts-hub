@@ -18,13 +18,13 @@ const Navigation = () => {
   return (
     <nav className="bg-white shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-20">
+        <div className="flex justify-between h-24">
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
               <img 
                 src="/lovable-uploads/6c557520-9a92-4641-a2f4-960cfd622744.png" 
                 alt="ECO Saving Auto Parts" 
-                className="h-12"
+                className="h-16"
               />
             </Link>
           </div>
