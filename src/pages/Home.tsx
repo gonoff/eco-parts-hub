@@ -6,11 +6,12 @@ const Home = () => {
   return (
     <div className="container mx-auto px-4">
       {/* Hero Section */}
-      <section className="text-white text-center py-16">
+      <section className="text-white text-center py-16 relative">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-secondary/20 via-primary to-primary -z-10"></div>
         <img 
           src="/lovable-uploads/2f110710-5090-4b3f-9fa5-85402f58365b.png" 
           alt="ECO Saving Auto Parts - Your trusted source for affordable & reliable auto parts in Orlando, FL" 
-          className="w-full max-w-6xl mx-auto"
+          className="w-full max-w-6xl mx-auto relative z-10"
         />
       </section>
 
